@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href='https://css.gg/math-divide.css' rel='stylesheet'>
+    <link href='https://css.gg/math-plus.css' rel='stylesheet'>
+    <link href='https://css.gg/math-minus.css' rel='stylesheet'>
+    <link href='https://css.gg/math-equal.css' rel='stylesheet'>
+    <link href='https://css.gg/asterisk.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="border">
+
+            <div id="display" class="display"></div>
+
+            <div class="containerBtnClear">
+                <button id="btnClear" onclick="clean()">C</button>
+            </div>
+
+            <div class="btns">
+
+                <button class="btnGray" onclick="insert(7)">7</button>
+                <button class="btnGray" onclick="insert(8)">8</button>
+                <button class="btnGray" onclick="insert(9)">9</button>
+                <button class="btnOrange" onclick="insert('/')"><i class="gg-math-divide"></i></button>
+                <button class="btnGray" onclick="insert(4)">4</button>
+                <button class="btnGray" onclick="insert(5)">5</button>
+                <button class="btnGray" onclick="insert(6)">6</button>
+                <button class="btnOrange" onclick="insert('*')"><i class="gg-asterisk"></i></button>
+                <button class="btnGray" onclick="insert(1)">1</button>
+                <button class="btnGray" onclick="insert(2)">2</button>
+                <button class="btnGray" onclick="insert(3)">3</button>
+                <button class="btnOrange" onclick="insert('-')"><i class="gg-math-minus"></i></button>
+                <button class="btnGray" onclick="insert(0)">0</button>
+                <button class="btnGray" onclick="insert('.')">.</button>
+                <button class="btnBlue" onclick="calcular()"><i class="gg-math-equal"></i></button>
+                <button class="btnOrange" onclick="insert('+')"><i class="gg-math-plus"></i></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
